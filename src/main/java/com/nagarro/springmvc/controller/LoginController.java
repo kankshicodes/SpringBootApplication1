@@ -43,7 +43,7 @@ public class LoginController {
 	ModelAndView mv = new ModelAndView();
 
 	@GetMapping("/")
-	public ModelAndView user() {
+	public ModelAndView userLogin() {
 		ModelAndView modelandview = new ModelAndView("login");
 		modelandview.addObject("user", new UserModel());
 		return modelandview;
